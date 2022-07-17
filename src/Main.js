@@ -6,7 +6,11 @@ class Main extends React.Component{
       <>
       <h2> {this.props.title} </h2>
       <p>{this.props.description}</p>
-      <img> {this.props.imageUrl}</img>
+      <img src= {this.props.imageUrl}
+      alt = {this.props.title}
+      title = {this.props.tile}/>
+      
+      
       </>
     )
   }
