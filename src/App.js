@@ -3,17 +3,18 @@ import "./App.css";
 import Header from './Header';
 import Footer from './Footer'; 
 import Main from './Main';
+import HornedBeast from './HornedBeast'; 
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
         <Header/>
-        <Main title = {"Unicorn"} description = {"magical horse"} imageUrl = {""}/>
-        <Main title = {"Elephant"} description = {"wise land whale"} imageUrl = {""}/>
+        <Main />
+        {/* <HornedBeast/> */}
         <Footer/>
       </div>
-    )
+    ); 
   }
 }
 
