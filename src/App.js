@@ -11,7 +11,7 @@ class App extends React.Component {
       <div className="App">
         <Header/>
         <Main />
-        {/* <HornedBeast/> */}
+        <HornedBeast/>
         <Footer/>
       </div>
     ); 
