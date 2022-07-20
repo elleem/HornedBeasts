@@ -4,6 +4,7 @@ import Header from './Header';
 import Footer from './Footer'; 
 import Main from './Main';
 import HornedBeast from './HornedBeast'; 
+import list from './data.json'; 
 
 class App extends React.Component {
   render() {
