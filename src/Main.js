@@ -5,6 +5,12 @@ import list from './data.json';
 
 
 class Main extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      beast: list, 
+    }
+  }
   render (){
     return (
       
