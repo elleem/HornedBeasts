@@ -3,7 +3,6 @@ import "./App.css";
 import Header from './Header';
 import Footer from './Footer'; 
 import Main from './Main';
-import HornedBeast from './HornedBeast'; 
 
 
 class App extends React.Component {
@@ -12,7 +11,6 @@ class App extends React.Component {
       <div className="App">
         <Header/>
         <Main />
-        <HornedBeast/>
         <Footer/>
       </div>
     ); 

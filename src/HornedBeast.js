@@ -18,6 +18,8 @@ class HornedBeast extends React.Component {
       <p>{this.props.description}</p>
       <img src= {this.props.image_url}
       alt = {this.props.title}
+      height= "100"
+      width = "100"
       onClick={this.handleClick}/>
       <p>🤘{this.state.votes}</p>
       </>

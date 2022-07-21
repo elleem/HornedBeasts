@@ -13,10 +13,10 @@ class Main extends React.Component{
   }
   render (){
     return (
-      
       <>
-        <HornedBeast title = {list[0].title} description = {list[0].description} image_url ={list[0].image_url}/>
-        
+      {this.state.beast.map(beast =>
+        <HornedBeast title = {beast.title} description = {beast.description} image_url ={beast.image_url}/>
+        )}
       </>
     )
   }
