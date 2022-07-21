@@ -16,7 +16,7 @@ class Main extends React.Component{
   }
   render (){
     return (
-      <Container fluid>
+      <Container fluid id = 'main'>
       <Row md={3}>
       {this.state.beast.map(beast => (
         <Col md={3}>
