@@ -5,7 +5,7 @@ class Header extends React.Component{
     return (
       <>
       <h1> Horned Beasts </h1>
-      <h2> Vote for your favorite beast! </h2>
+      <h3> Vote for your favorite beast! </h3>
       </>
     )
   }
