@@ -1,14 +1,30 @@
 import React from 'react'; 
 import HornedBeast from './HornedBeast';
+import list from './data.json'; 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 
 class Main extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      beast: list, 
+    }
+  }
   render (){
     return (
-      <>
-        <HornedBeast title = {"UniWhale"} description = {"A unicorn and a narwhal nuzzling their horns"} imageUrl = {"http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg"}/>
-        <HornedBeast title = {"Rhino Family"} description = {"Parent rhino with two babies"} imageUrl = {"https://images.unsplash.com/photo-1512636618879-bbe79107e9e3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd9460ee6d1ddbb6b1ca7be86dfc4590&auto=format&fit=crop&w=1825&q=80"}/>
-      </>
+      <Container fluid id = 'main'>
+      <Row md={3}>
+      {this.state.beast.map(beast => (
+        <Col md={3}>
+        <HornedBeast title = {beast.title} description = {beast.description} image_url ={beast.image_url}/>
+        </Col>
+        ))}
+        </Row>
+        </Container>
     )
   }
 }
