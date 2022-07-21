@@ -5,13 +5,11 @@ class HornedBeast extends React.Component {
   constructor(props){
     super(props); 
     this.state = {
-      votes: 0 
+      votes: 0,
     }
   }
-    handleClick = () => {
-      let newStatus = this.state.votes+1; 
-      this.setState({votes: newStatus}); 
-      return newStatus; 
+    handleClick = () => { 
+      this.setState({votes: this.state.votes+1}); 
     }
   render() {
     return (
@@ -19,11 +17,11 @@ class HornedBeast extends React.Component {
       <h2> {this.props.title} </h2>
       <p>{this.props.description}</p>
       <img src= {this.props.image_url}
-      alt = {this.props.description}
+      alt = {this.props.title}
       onClick={this.handleClick}/>
-      <h3>Current votes:{this.state.votes}</h3>
+      <p>🤘{this.state.votes}</p>
       </>
-    )
+    );
   }
 }
 
