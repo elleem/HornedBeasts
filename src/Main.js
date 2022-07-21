@@ -1,6 +1,9 @@
 import React from 'react'; 
 import HornedBeast from './HornedBeast';
 import list from './data.json'; 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 
@@ -13,11 +16,15 @@ class Main extends React.Component{
   }
   render (){
     return (
-      <>
-      {this.state.beast.map(beast =>
+      <Container fluid>
+      <Row md={3}>
+      {this.state.beast.map(beast => (
+        <Col md={3}>
         <HornedBeast title = {beast.title} description = {beast.description} image_url ={beast.image_url}/>
-        )}
-      </>
+        </Col>
+        ))}
+        </Row>
+        </Container>
     )
   }
 }
