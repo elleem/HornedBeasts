@@ -34,6 +34,18 @@ Estimate of time needed to complete: 120 min
 
 Start time: 8:56pm
 
-Finish time: _____
+Finish time: 10:10pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 74 minutes, including media query
+
+###########################################################################
+
+Number and name of feature: Stretch Goal
+
+Estimate of time needed to complete: 60 min or bust!
+
+Start time: 10:10pm
+
+Finish time: 10:20pm
+
+Actual time needed to complete: 10 minutes, although candidly Hexx taught me how to do this frame by frame in the lecture!
