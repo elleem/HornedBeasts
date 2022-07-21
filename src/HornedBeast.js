@@ -18,7 +18,7 @@ class HornedBeast extends React.Component {
       <>
       <h2> {this.props.title} </h2>
       <p>{this.props.description}</p>
-      <img src= {this.props.imageUrl}
+      <img src= {this.props.image_url}
       alt = {this.props.description}
       onClick={this.handleClick}/>
       <h3>Current votes:{this.state.votes}</h3>
@@ -26,5 +26,7 @@ class HornedBeast extends React.Component {
     )
   }
 }
+
+//src, alt and title attributes for image element
 
 export default HornedBeast;
