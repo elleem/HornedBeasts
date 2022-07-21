@@ -19,7 +19,7 @@ class Main extends React.Component{
       <Container fluid id = 'main'>
       <Row md={3}>
       {this.state.beast.map(beast => (
-        <Col md={3}>
+        <Col>
         <HornedBeast title = {beast.title} description = {beast.description} image_url ={beast.image_url}/>
         </Col>
         ))}
