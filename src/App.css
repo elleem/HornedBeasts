@@ -1,12 +1,14 @@
 .App {
   text-align: center;
   background-color: lightgray;
+  margin: none; 
 }
 
 #card{
   margin:2rem auto 2rem;
   border:5px solid grey;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem; 
 }
 
 #main{
