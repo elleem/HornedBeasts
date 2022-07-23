@@ -1,24 +1,18 @@
 import React from 'react'; 
 import HornedBeast from './HornedBeast';
 import list from './data.json'; 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import {Container, Row, Col} from 'react-bootstrap';
+
 
 
 
 class Main extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      beast: list, 
-    }
-  }
+  
   render (){
     return (
       <Container fluid id = 'main'>
       <Row md={3}>
-      {this.state.beast.map(beast => (
+      {list.map(beast => (
         <Col>
         <HornedBeast title = {beast.title} description = {beast.description} image_url ={beast.image_url}/>
         </Col>
