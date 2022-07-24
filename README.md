@@ -58,6 +58,6 @@ Estimate of time needed to complete: 120 minutes
 
 Start time: 3:05pm 
 
-Finish time:
+Finish time: 5:50pm
 
-Actual time needed to complete:
+Actual time needed to complete: 110 minutes, although longer without TA help!!
