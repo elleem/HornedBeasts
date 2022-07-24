@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class HornedBeast extends React.Component {
   };
   render() {
     return (
-      <Card style={{ width: "18rem" }} id='card' className='h-100'>
+      <Card style={{ width: "18rem" }} id='card' className='h-100' >
         <Card.Body>
           <Card.Title> {this.props.title} </Card.Title>
           <Card.Text>{this.props.description}</Card.Text>
@@ -25,6 +26,7 @@ class HornedBeast extends React.Component {
             rounded
             onClick={this.handleClick}
           />
+          <Button onClick={()=>this.props.handleShowModal(this.props.title)}> Expand </Button>
       </Card>
     );
   }
