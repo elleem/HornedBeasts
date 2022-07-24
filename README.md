@@ -49,3 +49,15 @@ Start time: 10:10pm
 Finish time: 10:20pm
 
 Actual time needed to complete: 10 minutes, although candidly Hexx taught me how to do this frame by frame in the lecture!
+
+###########################################################################
+
+Number and name of feature: display a modal
+
+Estimate of time needed to complete: 120 minutes
+
+Start time: 3:05pm 
+
+Finish time: 5:50pm
+
+Actual time needed to complete: 110 minutes, although longer without TA help!!

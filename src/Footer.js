@@ -1,4 +1,5 @@
 import React from 'react'; 
+import Container from 'react-bootstrap/Container'; 
 
 class Footer extends React.Component{
   constructor(props){
@@ -14,11 +15,11 @@ class Footer extends React.Component{
   }
   render (){
     return (
-      <>
+      <Container fluid id = 'footer'>
       <h3 onClick={this.clickHander}> 
       {this.state.footer}
       </h3>
-      </>
+      </Container>
     )
   }
 }

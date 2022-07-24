@@ -1,6 +1,6 @@
 import React from "react";
-import Image from "react-bootstrap/Image";
 import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -14,18 +14,19 @@ class HornedBeast extends React.Component {
   };
   render() {
     return (
-      <Card style={{ width: "18rem" }} id='card'>
+      <Card style={{ width: "18rem" }} id='card' className='h-100' >
         <Card.Body>
           <Card.Title> {this.props.title} </Card.Title>
           <Card.Text>{this.props.description}</Card.Text>
           <Card.Text>🤘{this.state.votes}</Card.Text>
+        </Card.Body>
           <Card.Img
             src={this.props.image_url}
             alt={this.props.title}
             rounded
             onClick={this.handleClick}
           />
-        </Card.Body>
+          <Button onClick={()=>this.props.handleShowModal(this.props.title)}> Expand </Button>
       </Card>
     );
   }
