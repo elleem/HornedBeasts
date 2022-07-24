@@ -15,7 +15,7 @@ class Footer extends React.Component{
   }
   render (){
     return (
-      <Container>
+      <Container fluid id = 'footer'>
       <h3 onClick={this.clickHander}> 
       {this.state.footer}
       </h3>
