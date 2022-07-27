@@ -3,6 +3,7 @@ import "./App.css";
 import Header from './Header';
 import Main from './Main';
 import SelectedBeast from './SelectedBeast';
+import NumberForm from './NumberForm'; 
 import Footer from './Footer'; 
 import list from './data.json'; 
 import Container from 'react-bootstrap/Container';
@@ -15,6 +16,7 @@ class App extends React.Component {
   constructor(props){
     super(props); 
     this.state = {
+      list:list,
       showModal: false,
       selectedBeast: {}
 
@@ -31,11 +33,23 @@ class App extends React.Component {
   this.setState({showModal:false}); 
  };
 
+ filterHorns = (filterList) =>{
+  this.setState({list:filterList});
+ }; 
+
+ handleChange = (event) =>{
+  event.preventDefault(); 
+  this.setState({Horns: event.target.value}); 
+ }
+
 
   render() {
     return (
       <Container className="App">
         <Header/>
+        <NumberForm 
+        list = {list} 
+        filterHorns={this.filterHorns}/>
         <Main handleShowModal = {this.handleShowModal}/>
         <SelectedBeast
         showModal = {this.state.showModal}

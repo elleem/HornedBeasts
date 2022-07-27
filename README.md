@@ -61,3 +61,15 @@ Start time: 3:05pm
 Finish time: 5:50pm
 
 Actual time needed to complete: 110 minutes, although longer without TA help!!
+
+###########################################################################
+
+Number and name of feature: filter by numbers of horns
+
+Estimate of time needed to complete: 120 minutes
+
+Start time: 8:57pm
+
+Finish time: 
+
+Actual time needed to complete: 
