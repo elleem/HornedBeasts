@@ -15,8 +15,8 @@ class NumberForm extends React.Component{
 
   render (){
     return (
-      <Form.Group>
-        <Form.Label id="form-label"> Search for Beasts by Number of Horns</Form.Label>
+      <Form.Group id="form">
+        <Form.Label id="form-id"> Search for Beasts by Number of Horns</Form.Label>
         <Form.Select id = "form-select" as= "select" onChange={this.handleChange}>
         <option value=""> search</option>
         <option value="1">single horn 🦄</option>

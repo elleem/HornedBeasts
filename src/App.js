@@ -37,11 +37,6 @@ class App extends React.Component {
   this.setState({list:filterList});
  }; 
 
-//  handleChange = (event) =>{
-//   event.preventDefault(); 
-//   this.setState({horns: event.target.value}); 
-//  }
-
 
   render() {
     return (

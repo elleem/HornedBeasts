@@ -68,8 +68,8 @@ Number and name of feature: filter by numbers of horns
 
 Estimate of time needed to complete: 120 minutes
 
-Start time: 9:20pm to 10:00pm
+Start time: 9:20pm to 10:00pm and 7:00pm to 8:00pm 
 
-Finish time: 
+Finish time: 9:20pm to 10:00pm and 7:00pm to 8:00pm
 
-Actual time needed to complete: 
+Actual time needed to complete: 100 minutes, I had a big bug that I finally found in my map function, that I didn't understand because I had linked my list and I caught on today's lab because things weren't rendering.
