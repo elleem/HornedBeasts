@@ -68,7 +68,7 @@ Number and name of feature: filter by numbers of horns
 
 Estimate of time needed to complete: 120 minutes
 
-Start time: 8:57pm
+Start time: 9:20pm to 10:00pm
 
 Finish time: 
 

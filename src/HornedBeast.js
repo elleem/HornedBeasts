@@ -23,7 +23,7 @@ class HornedBeast extends React.Component {
           <Card.Img
             src={this.props.image_url}
             alt={this.props.title}
-            rounded
+            rounded = "true"
             onClick={this.handleClick}
           />
           <Button onClick={()=>this.props.handleShowModal(this.props.title)}> Expand </Button>

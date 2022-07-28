@@ -24,7 +24,7 @@ class App extends React.Component {
   }
 
  handleShowModal =(beastName)=>{
-  const selectedBeast = list.find(beast => beast.title===beastName)
+  const selectedBeast = list.find(beast => beast.title===beastName); 
   //find the beast object whose name matches the beastName
   this.setState({showModal:true, selectedBeast});
  };
@@ -37,10 +37,10 @@ class App extends React.Component {
   this.setState({list:filterList});
  }; 
 
- handleChange = (event) =>{
-  event.preventDefault(); 
-  this.setState({Horns: event.target.value}); 
- }
+//  handleChange = (event) =>{
+//   event.preventDefault(); 
+//   this.setState({horns: event.target.value}); 
+//  }
 
 
   render() {
@@ -50,7 +50,9 @@ class App extends React.Component {
         <NumberForm 
         list = {list} 
         filterHorns={this.filterHorns}/>
-        <Main handleShowModal = {this.handleShowModal}/>
+        <Main 
+        list ={this.state.list}
+        handleShowModal = {this.handleShowModal}/>
         <SelectedBeast
         showModal = {this.state.showModal}
         handleExitModal = {this.handleExitModal}
