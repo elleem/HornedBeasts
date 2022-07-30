@@ -9,14 +9,14 @@ class Footer extends React.Component{
     }
   }
 
-  clickHander = () => {
+  clickHandler = () => {
     let newStatus = this.state.footer === 'created by Lauren'? '⚡': 'created by Lauren'; 
     this.setState({footer: newStatus}); 
   }
   render (){
     return (
       <Container fluid id = 'footer'>
-      <h3 onClick={this.clickHander}> 
+      <h3 onClick={this.clickHandler}> 
       {this.state.footer}
       </h3>
       </Container>

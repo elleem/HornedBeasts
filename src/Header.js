@@ -6,6 +6,7 @@ class Header extends React.Component{
       <>
       <h1> Horned Beasts </h1>
       <h3> Vote for your favorite beast! </h3>
+      <h6> (Click on the photo to add your vote)</h6>
       </>
     )
   }
