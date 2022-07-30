@@ -14,8 +14,8 @@ class Main extends React.Component{
       {this.props.list.map(beast => (
         <Col>
         <HornedBeast 
-        title = {beast.title} 
         key={beast._id}
+        title = {beast.title} 
         description = {beast.description} 
         image_url = {beast.image_url}
         handleShowModal = {this.props.handleShowModal}
